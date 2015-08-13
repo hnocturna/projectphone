@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checklist_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/checklist_imageview"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        android:background="@drawable/circle_purple"
+        android:src="@drawable/ic_keyboard_arrow_down_white_24dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checklist_checkbox"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/checklist_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/checklist_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/checklist_checkbox"
+        android:layout_toRightOf="@id/checklist_checkbox"
+        />
+
+</RelativeLayout>

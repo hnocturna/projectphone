@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_known"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.android.phone4me.KnownActivity">
+
+        <!-- <TextView
+            android:id="@+id/known_make_prompt"
+            android:text="@string/known_make_prompt"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/known_make_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/known_make_prompt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/known_make_prompt" />
+
+        <TextView
+            android:id="@+id/known_model_prompt"
+            android:text="@string/known_model_prompt"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/known_model_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/known_make_spinner"
+            android:layout_alignBaseline="@id/known_model_prompt"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/known_model_prompt" /> -->
+
+        <TextView
+            android:id="@+id/known_make_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/known_make_popular"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sample_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/known_make_popular"
+            android:layout_marginTop="10dp" />
+
+        <GridLayout
+            android:id="@+id/activity_known_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/known_make_popular"
+            android:layout_centerHorizontal="true"
+            android:columnCount="2"
+            android:weightSum="1.0"
+            tools:context=".GridXMLActivity" />
+
+
+    </RelativeLayout>
+</ScrollView>

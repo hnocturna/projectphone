@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="30dp"
+    android:background="@color/white"
+    card_view:cardCornerRadius="2dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/dark"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text1"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon1"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text1"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text2"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon2"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text2"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text3"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon3"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text3"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text4"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon4"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text4"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text5"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon5"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text5"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text6"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon6"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text6"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text7"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon7"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button7"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text7"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text8"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon8"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button8"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text8"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text9"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon9"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button9"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text9"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text10"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon10"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button10"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text10"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text11"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon11"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button11"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text11"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/req_spec_card_rl12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_spec_text12"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/link_icon12"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_insert_link_white_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_req_button12"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/card_spec_text12"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_mode_edit_white_24dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/edit_req_button"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

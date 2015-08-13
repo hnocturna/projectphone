@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">projectphone</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_prompt">How would you like to discover your next phone?</string>
+    <string name="search_interest">Search based on how I use my phone</string>
+    <string name="search_name">I know what phone I want</string>
+    <string name="search_specs">Search based on phone specifications</string>
+    <string name="title_activity_interest">How do you use your phone?</string>
+    <string name="title_activity_known">Which phone?</string>
+    <string name="title_activity_specs">What spec matters most?</string>
+    <string name="title_activity_select_spec">Select your spec</string>
+    <string name="known_make_prompt">Make/Brand?</string>
+    <string name="known_model_prompt">Model?</string>
+    <string name="known_make_popular">Current Popular Phones</string>
+    <string name="spec_select">What are your phone\'s minimum requirements?</string>
+    <string name="refresh">Refresh</string>
+    <string name="add_spec_text">Add Spec</string>
+    <string name="find_my_phone">Find my phone!</string>
+    <string name="title_activity_phone_specs">PhoneSpecs</string>
+    <string name="title_activity_specs_phone_results">SpecsPhoneResults</string>
+    <string name="newbie_intro">Don\'t know what to look for in a phone?</string>
+    <string name="newbie_intro_2">That\'s okay. This activity will help you find phones that fit your usage and needs.</string>
+    <string name="newbie_intro_3"> Let\'s get started. Click the arrow below.</string>
+    <string name="phone_results_title">These phones match your requirements.</string>
+    <string name="title_activity_newbie">NewbieActivity</string>
+    <string name="search_hint">Type a phone name</string>
+    <string name="no_phones_found">No phones matching search string found!</string>
+    <string name="reset_specs">Clear specs</string>
+    <string name="all_requirements">ALL options</string>
+    <string name="any_requirements">At least one option</string>
+    <string name="height">Height</string>
+    <string name="width">Width</string>
+    <string name="depth">Depth</string>
+
+</resources>

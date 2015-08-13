@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_specs_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.android.phone4me.SpecsActivity">
+
+    <TextView
+        android:layout_margin="16dp"
+        android:id="@+id/spec_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/spec_select"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/requirement_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spec_title" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/add_spec_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/dark"
+        fab:fab_colorRipple="@color/accent"
+        />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/search_phone_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@id/add_spec_button"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_send_white_24dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        fab:fab_type="mini"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/dark"
+        fab:fab_colorRipple="@color/accent"
+        />
+
+</RelativeLayout>

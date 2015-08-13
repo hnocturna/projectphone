@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/primary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/welcome_prompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_background"
+        android:background="@color/white"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+    <!-- <LinearLayout
+        android:id="@+id/choice_background"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/choice_1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/search_interest"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/interest_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/orange_circle"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/choice_2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/search_name"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/known_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/orange_circle"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/choice_3"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/search_specs"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/specs_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/orange_circle"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout> -->
+
+</LinearLayout>

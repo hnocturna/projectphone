@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.android.projectphone.SpecsPhoneResults">
+
+    <TextView
+        android:id="@+id/known_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/known_make_popular"
+        android:textSize="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_phones_tv"
+        android:layout_centerInParent="true"
+        android:text="@string/no_phones_found"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_below="@id/known_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/search_again_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_youtube_searched_for_white_24dp"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/dark"
+        fab:fab_colorRipple="@color/accent"
+        />
+
+</RelativeLayout>

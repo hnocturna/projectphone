@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Phone4Me</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_prompt">How would you like to discover your next phone?</string>
+    <string name="search_interest">Search based on how I use my phone</string>
+    <string name="search_name">I know what phone I want</string>
+    <string name="search_specs">Search based on phone specifications</string>
+    <string name="title_activity_interest">How do you use your phone?</string>
+    <string name="title_activity_known">Which phone?</string>
+    <string name="title_activity_specs">What spec matters most?</string>
+    <string name="title_activity_select_spec">Select your spec</string>
+    <string name="known_make_prompt">Make/Brand?</string>
+    <string name="known_model_prompt">Model?</string>
+    <string name="known_make_popular">Current Popular Phones</string>
+    <string name="spec_select">What are your phone\'s minimum requirements?</string>
+    <string name="refresh">Refresh</string>
+    <string name="add_spec_text">Add Spec</string>
+    <string name="title_activity_phone_specs">PhoneSpecs</string>
+
+
+</resources>
