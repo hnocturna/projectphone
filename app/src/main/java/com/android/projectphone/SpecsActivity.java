@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,7 +26,7 @@ import java.util.Map;
 public class SpecsActivity extends ActionBarActivity {
     // Displays the requirements the user has chosen and allows a launching point for adding more requirements and searching for a phone that meets those requirements.
     RelativeLayout activitySpecsLayout;
-    MySQLiteHelper db = new MySQLiteHelper(this);
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);
     static Map<Integer, List<UserReq>> specReqMap = new LinkedHashMap<>();          // Used to hold all user selected requirements;
     static List<Integer> availableColorGroups = new LinkedList<>(Arrays.asList(0, 1, 2, 3, 4, 5));
     static Map<Integer, Integer> specColorGroupMap = new LinkedHashMap<>();

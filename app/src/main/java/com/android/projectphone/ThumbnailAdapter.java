@@ -12,6 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -56,7 +58,7 @@ public class ThumbnailAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         String phone = thumbnailLoader.getCurrentPhone(position);
-        MySQLiteHelper db = new MySQLiteHelper(context);
+        PhoneDbHelperTest db = new PhoneDbHelperTest(context);
 
         List<String> phoneList = new LinkedList<>();
         phoneList.add(phone);

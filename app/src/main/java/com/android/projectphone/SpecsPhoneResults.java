@@ -11,6 +11,8 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +20,7 @@ import java.util.Map;
 
 public class SpecsPhoneResults extends ActionBarActivity {
     // Activity displays all phones that meet the user requirements.
-    MySQLiteHelper db = new MySQLiteHelper(this);
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);
     private int itemsPerPage = 12;
     private int loadNextItemsThreshold = 10;
 

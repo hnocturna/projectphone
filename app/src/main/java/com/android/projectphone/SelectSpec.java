@@ -17,6 +17,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,7 +31,7 @@ import java.util.Map;
  * Created by Nocturna on 5/10/2015.
  */
 public class SelectSpec extends ActionBarActivity {
-    MySQLiteHelper db = new MySQLiteHelper(this);
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);
 
     List<UserReq> userReqList = new LinkedList<>();
 

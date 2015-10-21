@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -18,7 +20,7 @@ import java.util.Map;
 
 public class PhoneSpecs extends ActionBarActivity {
     ArrayList<String> phoneSpecList = new ArrayList<String>();
-    MySQLiteHelper db = new MySQLiteHelper(this);
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);
 
     String phoneURL = null;
     String phone = null;

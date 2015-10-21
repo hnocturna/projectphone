@@ -31,7 +31,7 @@ public class NumericalSpec {
         this.unit = unit;
     }
     public NumericalSpec(String category, String spec, HashMap<Integer, Integer> choiceMap, String unit) {
-        // For specs with a clear ranking. <- Ranking is determined by numerical value and stored in the getMinMax() method from MySQLiteHelper class.
+        // For specs with a clear ranking. <- Ranking is determined by numerical value and stored in the getMinMax() method from PhoneDbHelperTest class.
         this.category = category;
         this.spec = spec;
         this.choiceMap = choiceMap;

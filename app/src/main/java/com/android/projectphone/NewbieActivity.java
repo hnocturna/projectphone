@@ -17,6 +17,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
 import com.melnykov.fab.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class NewbieActivity extends ActionBarActivity {
     List<String> tempSpecificPhones = new LinkedList<String>();                  // Temporarily holds phones and merges them with the full list to retain only the common phones.
     Double minInput;                                                        // Holds the minInput for the display size.
     Double maxInput;                                                        // Hold the maxInput for the display size
-    MySQLiteHelper db = new MySQLiteHelper(this);
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);
     List<CardInfo> multimediaCardList = new LinkedList<>();
     List<CardInfo> cameraCardList = new LinkedList<>();
     List<CardInfo> phoneCardList = new LinkedList<>();

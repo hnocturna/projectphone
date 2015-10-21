@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
 import com.melnykov.fab.FloatingActionButton;
 
 import java.util.LinkedHashMap;
@@ -24,7 +25,7 @@ import java.util.Map;
 
 
 public class KnownActivity extends ActionBarActivity implements View.OnClickListener {
-    MySQLiteHelper db = new MySQLiteHelper(this);
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);
     int itemsPerPage = 12;
     int loadNextItemsThreshold = 2;
 
@@ -162,14 +163,19 @@ public class KnownActivity extends ActionBarActivity implements View.OnClickList
         }); */
     }
 
+    boolean firstLoad = true;
     public void loadThumbnails(List<String> phoneList) {
+
         TextView noPhonesTV = (TextView) findViewById(R.id.no_phones_tv);
 
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(false);
         final GridLayoutManager glm = new GridLayoutManager(KnownActivity.this, 2);
-        recyclerView.addItemDecoration(new ThumbnailItemDecoration(48, 2));
+        if (firstLoad) {
+            recyclerView.addItemDecoration(new ThumbnailItemDecoration(48, 2));
+            firstLoad = false;
+        }
         recyclerView.setLayoutManager(glm);
 
         final FloatingActionButton resetSearchFAB = (FloatingActionButton) findViewById(R.id.search_again_fab);

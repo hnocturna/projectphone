@@ -11,6 +11,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+import com.android.projectphone.data.PhoneProvider;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -37,7 +40,7 @@ public class SplashScreen extends Activity {
     static List<String> sectionTitles = new ArrayList<>();                          // List of tables currently in the database.
     static List<String> allPhones = null;                                           // List of all phones in the database and phones to be downloaded.
 
-    static Map<String, List> map = new HashMap<>();                                 // Map of (key) section to (value) list of specs. Used to create the initial database.
+    public static Map<String, List> map = new HashMap<>();                                 // Map of (key) section to (value) list of specs. Used to create the initial database.
     static Map<String, String> phoneURLMap = new HashMap<>();                       // Links the phone to its spec sheet URL.
     static Map<String, ArrayList> phoneImageURLMap = new HashMap<>();               // Links the phone to its thumbnail URL.
     static Map<String, List<String>> phoneSpecListMap = new LinkedHashMap<>();      // Map of (key) phone, table, & spec to (value) the phone's spec.
@@ -52,7 +55,7 @@ public class SplashScreen extends Activity {
 
     public static String myPrefs = "com.android.phone4me.prefs";                    // My Preferences file.
 
-    MySQLiteHelper db = new MySQLiteHelper(this);                                   // Initialize the MySQLiteHelper.
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);                                   // Initialize the PhoneDbHelperTest.
 
     com.gc.materialdesign.views.ProgressBarCircularIndeterminate progressBar;       // Progress bar :D
     TextView textView;                                                              // Used to update the user as to the progress of the download.
@@ -62,6 +65,7 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         mContext = getApplicationContext();
 
+        Log.v("test", PhoneProvider.testString());
         setContentView(R.layout.splashscreen);
 
         // Initialize the views
@@ -390,7 +394,7 @@ public class SplashScreen extends Activity {
                 /*
                 * Download each section's worth of specs and adds it to the phoneSpecMap.
                 * phoneSpecMap is formatted so that the key contains: phone model, table, and column.
-                * Regex is used to select each variable in the addSpec function of MySQLiteHelper.
+                * Regex is used to select each variable in the addSpec function of PhoneDbHelperTest.
                 * The value of phoneSpecMap contains only the phone's individual spec.
                  */
                 for (String sectionTitle : sectionTitles) {

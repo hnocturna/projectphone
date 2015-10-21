@@ -14,6 +14,8 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -25,11 +27,11 @@ public class ChecklistAdapter extends BaseAdapter {
     private Context context;
     private List<String> checkList;
     private List<String> userChoice;
-    private MySQLiteHelper db;
+    private PhoneDbHelperTest db;
 
 
     public ChecklistAdapter(Context context, List<String> checkList, List<String> userChoice) {
-        this.db = new MySQLiteHelper(context);
+        this.db = new PhoneDbHelperTest(context);
         this.context = context;
         this.checkList = checkList;
         this.userChoice = userChoice;

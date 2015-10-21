@@ -19,6 +19,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
+import com.android.projectphone.data.PhoneDbHelperTest;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -43,7 +45,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     static ArrayList<String> phoneArray = new ArrayList<String>();
     static List<String> phoneURLArray = new LinkedList<String>();
     static ArrayList<String> phoneImageURLArray = new ArrayList<String>();
-    static List<String> sectionTitles = new ArrayList<String>();
+    public static List<String> sectionTitles = new ArrayList<String>();
     static ArrayList<String> specList = new ArrayList<String>();
     static HashMap<String, List> map = new HashMap<String, List>();
     // static HashMap<String, List> phoneSpecMap = new HashMap<String, List>();
@@ -78,7 +80,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private List<CardInfo> mainCardList = new LinkedList<>();
 
 
-    MySQLiteHelper db = new MySQLiteHelper(this);
+    PhoneDbHelperTest db = new PhoneDbHelperTest(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
